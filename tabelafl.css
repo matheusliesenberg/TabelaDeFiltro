@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  #numero {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  #tabuada {
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  #tabuada br {
+    margin-bottom: 5px;
+  }
+  
+  #tabuada td {
+    border: 1px solid gray;
+    padding: 5px;
+  }
+  
+  #tabuada tr.titulo {
+    background-color: #ccc;
+  }
+  
+  #tabuada td.numero {
+    text-align: center;
+  }
+  

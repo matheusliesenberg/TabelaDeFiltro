@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+  }
+  #nm {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #lista {
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  #lista li {
+    border: 1px solid gray;
+    padding: 5px;
+  }
+  #lista li.negrito {
+    font-weight: bold;
+  }
+  

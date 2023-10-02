@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela de Nome Negrito Dinâmico</title>
+</head>
+<body>
+    <input type="text" id="nm">
+    <ul id="lista">
+        <li>João</li>
+        <li>Claudio</li>
+        <li>Marcio</li>
+        <li>Maria</li>
+        <li>Pedro</li>
+        <li>Ana</li>
+        <li>José</li>
+        <li>Francisco</li>
+        <li>Carlos</li>
+    </ul>
+    <script>
+        const nome = document.getElementById("nm");
+        const lista = document.getElementById("lista");
+        nome.addEventListener("input", (event) => {
+            const valor = event.target.value.toLowerCase();
+            const itens = lista.getElementsByTagName("li");
+            for (const item of itens) {
+                item.style.fontWeight = "normal";
+            }
+            for (const item of itens) {
+                if (item.textContent.toLowerCase().startsWith(valor)) {
+                    item.style.fontWeight = "bold";
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
